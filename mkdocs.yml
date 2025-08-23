@@ -1,0 +1,48 @@
+site_name: Abhi Photography
+site_description: A clean, free photography portfolio by Abhi using MkDocs Material.
+site_url: https://<your-github-username>.github.io/abhi-photo-portfolio-mkdocs/
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+    - toc.follow
+    - header.autohide
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+plugins:
+  - search
+  - glightbox
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Gallery:
+      - Nature: gallery/nature.md
+      - Travel: gallery/travel.md
+      - People: gallery/people.md
+      - Abstract: gallery/abstract.md
+  - About: about.md
+  - Contact: contact.md
